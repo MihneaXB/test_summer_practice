@@ -1,7 +1,8 @@
-package com.createq.testsummerpractice.service;
+package com.createq.testsummerpractice.service.impl;
 
 import com.createq.testsummerpractice.model.SchoolModel;
 import com.createq.testsummerpractice.repository.SchoolRepository;
+import com.createq.testsummerpractice.service.SchoolService;
 
 import java.util.List;
 
