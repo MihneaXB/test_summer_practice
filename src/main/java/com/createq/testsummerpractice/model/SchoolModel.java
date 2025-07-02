@@ -1,10 +1,16 @@
 package com.createq.testsummerpractice.model;
 
+import jakarta.persistence.*;
+
 import java.util.List;
 
+@Entity
 public class SchoolModel {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
+    @OneToMany(mappedBy = "school", cascade = CascadeType.ALL)
     List<StudentModel> students;
 
     public int getId() {

@@ -4,7 +4,6 @@ import com.createq.testsummerpractice.model.StudentModel;
 import com.createq.testsummerpractice.repository.StudentRepository;
 import com.createq.testsummerpractice.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,6 +23,6 @@ public class DefaultStudentService implements StudentService {
 
     @Override
     public List<StudentModel> getAll(){
-        return studentRepository.getAll();
+        return studentRepository.findAll();
     }
 }

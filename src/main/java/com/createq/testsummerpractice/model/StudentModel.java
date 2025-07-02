@@ -1,9 +1,17 @@
 package com.createq.testsummerpractice.model;
 
+
+import jakarta.persistence.*;
+
+@Entity
 public class StudentModel {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
     private int age;
+    @ManyToOne
+    @JoinColumn(name = "school_id")
     private SchoolModel school;
 
     public int getId() {
