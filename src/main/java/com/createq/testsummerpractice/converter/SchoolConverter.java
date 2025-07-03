@@ -2,10 +2,12 @@ package com.createq.testsummerpractice.converter;
 
 import com.createq.testsummerpractice.dto.SchoolDTO;
 import com.createq.testsummerpractice.model.SchoolModel;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Component
 public class SchoolConverter {
     private final StudentConverter studentConverter;
 
