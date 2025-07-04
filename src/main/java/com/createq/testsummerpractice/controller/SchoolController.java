@@ -18,11 +18,11 @@ public class SchoolController {
         this.schoolFacade = facade;
     }
 
-    @GetMapping("schools")
+    @GetMapping("allSchools")
     public String getAll(Model model) {
         List<SchoolDTO> schools = schoolFacade.getAll();
-        model.addAttribute("schools", schools);
-        return " ";
+        model.addAttribute("allSchools", schools);
+        return "allSchools";
     }
 }
 

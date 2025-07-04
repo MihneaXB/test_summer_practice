@@ -4,21 +4,22 @@ package com.createq.testsummerpractice.model;
 import jakarta.persistence.*;
 
 @Entity
+@Table
 public class StudentModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
     private String name;
     private int age;
+
     @ManyToOne
-    @JoinColumn(name = "school_id")
     private SchoolModel school;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

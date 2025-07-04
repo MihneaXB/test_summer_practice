@@ -14,6 +14,7 @@ public class StudentConverter {
         StudentDTO dto = new StudentDTO();
         dto.setId(studentModel.getId());
         dto.setName(studentModel.getName());
+        dto.setAge(studentModel.getAge());
         return dto;
     }
 

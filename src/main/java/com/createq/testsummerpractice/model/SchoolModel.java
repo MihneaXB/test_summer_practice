@@ -5,12 +5,13 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
+@Table
 public class SchoolModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    @OneToMany(mappedBy = "school", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "school")
     List<StudentModel> students;
 
     public int getId() {
