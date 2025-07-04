@@ -18,10 +18,10 @@ public class StudentController {
         this.studentFacade = studentFacade;
     }
 
-    @GetMapping("allStudents")
+    @GetMapping("students")
     public String getAll(Model model) {
-        List<StudentDTO> students = studentFacade.getAll();
-        model.addAttribute("allStudents", students);
+        List<StudentDTO> studentsDTOList = studentFacade.getAll();
+        model.addAttribute("allStudents", studentsDTOList);
         return "allStudents";
     }
 }
