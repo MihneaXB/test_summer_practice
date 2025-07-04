@@ -11,8 +11,8 @@
 <head>
     <title>Students Page</title>
     <nav>
-        <li><a href="/allStudents">Studenti</a></li>
-        <li><a href="/allSchools">Scoli</a></li>
+        <li><a href="/students">Studenti</a></li>
+        <li><a href="/schools">Scoli</a></li>
     </nav>
     <link href="<c:url value="/static/css/common.css"/>" rel="stylesheet" type="text/css">
 </head>
