@@ -4,10 +4,6 @@ import com.createq.testsummerpractice.model.SchoolModel;
 import com.createq.testsummerpractice.repository.SchoolRepository;
 import com.createq.testsummerpractice.service.SchoolService;
 import org.springframework.beans.factory.annotation.Autowired;
-<<<<<<< HEAD
-import org.springframework.stereotype.Repository;
-=======
->>>>>>> day3
 import org.springframework.stereotype.Service;
 
 import java.util.List;
